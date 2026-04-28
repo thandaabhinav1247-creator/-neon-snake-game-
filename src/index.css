@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-cyan: #0ff;
+  --color-neon-pink: #f0f;
+  --color-neon-green: #39ff14;
+}
+
+@layer utilities {
+  .glow-cyan {
+    filter: drop-shadow(0 0 5px #0ff) drop-shadow(0 0 8px #0ff);
+  }
+  .glow-pink {
+    filter: drop-shadow(0 0 5px #f0f) drop-shadow(0 0 8px #f0f);
+  }
+  .glow-green {
+    filter: drop-shadow(0 0 5px #39ff14) drop-shadow(0 0 8px #39ff14);
+  }
+
+  .text-neon-cyan {
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+  }
+  .text-neon-pink {
+    text-shadow: 0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f;
+  }
+  .text-neon-green {
+    text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14;
+  }
+  
+  .box-neon-cyan {
+    box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, inset 0 0 5px #0ff;
+  }
+  .box-neon-pink {
+    box-shadow: 0 0 5px #f0f, 0 0 10px #f0f, inset 0 0 5px #f0f;
+  }
+  .box-neon-green {
+    box-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, inset 0 0 5px #39ff14;
+  }
+  .box-neon-green-solid {
+    box-shadow: 0 0 5px #39ff14, 0 0 15px #39ff14;
+  }
+}
+
+body {
+  background-color: paleblue;
+  color: white;
+  overflow: hidden; /* Prevent scrolling down when playing */
+}
